@@ -28,16 +28,15 @@ const resources = [
     title: 'Pluggy Docs',
     subtitle:
       'This template has configured Pluggy Connect to connect bank or financial accounts, the docs are a great place to learn more.',
-    url: 'https://supabase.com/docs/guides/auth/auth-helpers/nextjs',
+    url: 'https://docs.pluggy.ai',
     icon: 'M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528'
   }
 ]
 
 const examples = [
-  { type: 'Client Components', src: 'app/_examples/client-component/page.tsx' },
-  { type: 'Server Components', src: 'app/_examples/server-component/page.tsx' },
-  { type: 'Server Actions', src: 'app/_examples/server-action/page.tsx' },
-  { type: 'Route Handlers', src: 'app/_examples/route-handler.ts' }
+  { type: 'Pluggy Connect', src: 'app/templates/investments-manager/page.tsx' },
+  { type: 'Connect Token', src: 'app/api/pluggy/token/route.ts' },
+  { type: 'Pluggy API Webhook', src: 'app/api/pluggy/webhook/route.ts' }
 ]
 
 export default async function Index() {
@@ -152,8 +151,8 @@ export default async function Index() {
           <div className="grid gap-2 justify-center mx-auto text-center">
             <h2 className="text-lg font-bold text-center">Examples</h2>
             <p className="text-sm">
-              Look in the <code>_examples</code> folder to see how to create a Supabase client in
-              all the different contexts.
+              Look in the following examples to see how to use each different functionality of
+              Pluggy in all the different contexts.
             </p>
           </div>
           <div className="w-full justify-center border rounded-lg overflow-hidden">
